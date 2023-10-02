@@ -1,12 +1,12 @@
 #include<stdio.h>
 // this code prints the factorail of numbers from zero till n numbers
 int main(){
-	int a[1000];
-	int n,i,f,j;
+	long long int a[1000], f;
+	int n,i,j;
 	printf("please enter till where do you want the factorials=");
 	scanf("%d",&n);
 	a[0]=1;
-	printf("%d\n",a[0]);
+	printf("%lld\n",a[0]);
 	i=1;
 	while(i<=n){
 		j=i;
@@ -16,7 +16,7 @@ int main(){
 			j--;
 		}
 		a[i]=f;
-		printf("%d\n", a[i]);
+		printf("%lld\n", a[i]);
 		i++;
 	}
 }
